@@ -1,0 +1,41 @@
+\documentclass[12pt, a4paper, oneside]{vitmscthesis}
+
+\thesistitle{Title of the Thesis}
+\thesison{Capstone Project}
+\programme{M.Sc. Data Science}
+\department{Division of Mathematics}
+\school{School of Advanced Sciences}
+\student{Student Name}
+\regno{19MDT0000}
+\guide{Guide Name}
+\submittedon{May - 2022}
+\bibliographyname{References}
+
+\begin{document}
+	
+%%%-----Printing the first few pages:  title, certificate, acknowledgment, etc.
+\input{frontmatters/frontmatter-main}
+
+\listoftables 
+\listoffigures
+
+%%--- All chapters
+\mainmatter
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+\include{chapters/chapter5}
+\include{chapters/chapter6}
+
+
+\appendix
+
+\include{appendices/appedix1}
+
+
+
+\addcontentsline{toc}{chapter}{\thebibliographyname}
+\bibliography{reference}
+
+\end{document}
