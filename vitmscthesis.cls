@@ -26,6 +26,9 @@
 \newcommand{\programme}[1]{
 \def\theprogramme{#1}}
 
+\newcommand{\programmeLongName}[1]{
+	\def\theprogrammeLongName{#1}}
+
 \newcommand{\department}[1]{
 	\def\thedepartment{#1}}
 
@@ -40,6 +43,9 @@
 
 \newcommand{\guide}[1]%
 {\def\theguide{#1}}%
+
+\newcommand{\hod}[1]%
+{\def\thehod{#1}}%
 
 \newcommand{\submittedon}[1]{
 	\def\thesubmittedon{#1}
