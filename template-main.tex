@@ -1,5 +1,19 @@
 \documentclass[12pt, a4paper, oneside]{vitmscthesis}
 
+
+
+\geometry{
+	paper=a4paper,% Change to letterpaper for US letter
+	left=3.81cm, % left margin
+	right=2.54cm, % Outer margin
+	bindingoffset=0cm, % Binding offset
+	top=2.54cm, % Top margin
+	bottom=2.54cm, % Bottom margin
+	%showframe,% show how the type block is set on the page
+}
+
+\renewcommand{\baselinestretch}{1.5} % for line spacing
+
 \thesistitle{Title of the Thesis}
 \thesison{Master Thesis}
 \programme{M.Sc. Data Science}
@@ -13,8 +27,6 @@
 \submittedon{April - 2024}
 \bibliographyname{References}
 
-
-
 \begin{document}
 	
 %%%-----Printing the first few pages:  title, certificate, acknowledgment, etc.
@@ -22,6 +34,8 @@
 
 \listoftables 
 \listoffigures
+
+\include{frontmatters/abbreviations.tex}
 
 %%--- All chapters
 \mainmatter
@@ -33,14 +47,17 @@
 \include{chapters/chapter6}
 
 
+\addcontentsline{toc}{chapter}{\thebibliographyname}
+\bibliographystyle{apalike}
+\bibliography{reference}
+
 \appendix
 
 \include{appendices/appedix1}
 
 
 
-\addcontentsline{toc}{chapter}{\thebibliographyname}
-\bibliography{reference}
+
 
 \include{backmatters/lastpage}
 

@@ -76,7 +76,7 @@
 	bottom=1in, % Bottom margin
 	%showframe,% show how the type block is set on the page
 }
-\renewcommand{\baselinestretch}{1.5} % for line spacing
+
 \RequirePackage{fancyhdr}%for the header and footer
 \RequirePackage{emptypage}%to remove headers and footers in the blank pages	
 
