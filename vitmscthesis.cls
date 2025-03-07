@@ -6,7 +6,7 @@
 \LoadClass{book}
 
 %%
-\RequirePackage{graphicx, amsmath, times, enumitem, amssymb}
+\RequirePackage{graphicx, amsmath, times, enumitem, booktabs, amssymb}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 %%
@@ -44,6 +44,9 @@
 \newcommand{\guide}[1]%
 {\def\theguide{#1}}%
 
+\newcommand{\guidedesignation}[1]%
+{\def\theguidedesignation{#1}}%
+
 \newcommand{\hod}[1]%
 {\def\thehod{#1}}%
 
@@ -67,13 +70,14 @@
 	includehead,
 	includefoot
 }
+
 \geometry{
 	paper=a4paper,% Change to letterpaper for US letter
-	inner=1in, % Inner margin
-	outer=1in, % Outer margin
+	left=3.81cm, % left margin
+	right=2.54cm, % Outer margin
 	bindingoffset=0cm, % Binding offset
-	top=1in, % Top margin
-	bottom=1in, % Bottom margin
+	top=2.54cm, % Top margin
+	bottom=2.54cm, % Bottom margin
 	%showframe,% show how the type block is set on the page
 }
 
@@ -131,6 +135,6 @@
 %%%--Bibliography Related----
 
 \AtBeginDocument{
-\bibliographystyle{agsm}
+% \bibliographystyle{agsm}
 \renewcommand{\bibname}{\thebibliographyname}
 }

@@ -1,16 +1,42 @@
 
 \chapter{System Design}
-This chapter should describe the engineering specifications and targets critically evaluating the existing benchmarks and specifically identifying the gaps which the project is intended to fill; It should show how the concepts evolved and were evaluated also should describe and justify the formation of the final product which may include possibly a number of subsections such as:
-
-
+The research problem can be expressed using fundamental equations in data science. One of the key formulations in machine learning is the cost function for linear regression:
+\begin{equation}
+	J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta (x^{(i)}) - y^{(i)} \right)^2
+\end{equation}
+where:
 \begin{itemize}
-	\item Details of the development.  System architecture indicating various modules / components and their interaction.
-	\item Feasibility assessment report. 
-	\item Entity relationship diagram / analysis / DFD / State Transition Diagram.
+	\item $J(\theta)$ is the cost function,
+	\item $h_\theta(x^{(i)})$ is the hypothesis function,
+	\item $y^{(i)}$ is the actual value,
+	\item $m$ is the number of training examples.
 \end{itemize}
 
-\section{Some section}
-some dummy data is written here... Please change it according to your need...
+Another fundamental concept in deep learning is the softmax function used in classification:
+\begin{equation}
+	\sigma(z)_j = \frac{e^{z_j}}{\sum_{k=1}^{K} e^{z_k}}
+\end{equation}
+where $z$ is the input vector and $K$ is the number of classes.
+
+Matrices play a crucial role in data science, especially in neural networks. A typical forward propagation step in a neural network can be expressed as:
+\begin{equation}
+	A^{[l]} = g(W^{[l]} A^{[l-1]} + b^{[l]})
+\end{equation}
+where:
+\begin{description}
+	\item $A^{[l]}$ is the activation at layer $l$,
+	\item $W^{[l]}$ is the weight matrix,
+	\item $b^{[l]}$ is the bias vector,
+	\item $g(\cdot)$ is the activation function.
+\end{description}
+
+An example of a weight matrix in a neural network with three inputs and two neurons is:
+\begin{equation}
+	W = \begin{bmatrix} 0.2 & 0.4 & 0.6 \\ 0.8 & 1.0 & 1.2 \end{bmatrix}
+\end{equation}
+
+\section{Some other section}
+some dummy data is written here... Please change it according to your need...\cite{lecun2015deep,vaswani2017attention}
 
 If you adopt an object-oriented method, you will include the following in this chapter:
 
