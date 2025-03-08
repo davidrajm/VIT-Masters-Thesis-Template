@@ -35,6 +35,30 @@ Table~\ref{tab:example} presents some sample data.
 
 Figure~\ref{fig:example} illustrates an example image.
 
+
+\begin{table}[h]
+	\centering
+	\rowcolors[\hline]{2}{green!30}{yellow!50} %alternate row colors starting at row 2
+	 \arrayrulecolor{red} % border color
+	 \setlength\arrayrulewidth{1.2pt} %  border size
+	\begin{tabular}{|l| c| c|}
+		\hline
+	\rowcolor{pink} 	Category & Value 1 & Value 2 \\
+		\hline
+		  A & 10 & 20 \\ \hline 
+		 B & 15 & 25 \\ \hline 
+		   C & 20 & 30 \\ 
+		\hline
+				   D & 10 & 50 \\ 
+		\hline
+				   E & 50 & 80 \\ 
+		\hline
+	\end{tabular}
+	\caption{An example table with some colors.}
+	\label{tab:example2}
+\end{table}
+
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\textwidth]{img/data-science}

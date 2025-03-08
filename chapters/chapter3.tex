@@ -35,12 +35,40 @@ An example of a weight matrix in a neural network with three inputs and two neur
 	W = \begin{bmatrix} 0.2 & 0.4 & 0.6 \\ 0.8 & 1.0 & 1.2 \end{bmatrix}
 \end{equation}
 
-\section{Some other section}
-some dummy data is written here... Please change it according to your need...\cite{lecun2015deep,vaswani2017attention}
+\section{Typing theorems and definitions}
+\begin{definition}[Probability Distribution]
+	A probability distribution is a function that provides the probabilities of occurrence of different possible outcomes in an experiment. Formally, for a discrete random variable $X$, the probability mass function (PMF) is defined as:
+	\begin{equation}
+		P(X = x) = f(x), \quad \sum_{x} f(x) = 1.
+	\end{equation}
+\end{definition}
 
-If you adopt an object-oriented method, you will include the following in this chapter:
+\begin{lemma}[Universal Approximation Theorem]
+	A feedforward neural network with a single hidden layer containing a finite number of neurons can approximate any continuous function on a compact subset of $\mathbb{R}^n$, provided the activation function is non-constant, bounded, and monotonically increasing.
+\end{lemma}
 
-\begin{itemize}
-	\item Sequence diagrams for each module and entire system.
-	\item Class diagrams or any other UML diagram for each module and entire system.
-\end{itemize}
+\begin{theorem}[Central Limit Theorem]
+	Let $X_1, X_2, ..., X_n$ be a sequence of independent and identically distributed random variables with mean $\mu$ and variance $\sigma^2$. Then, as $n$ approaches infinity, the standardized sum:
+	\begin{equation}
+		Z_n = \frac{\sum_{i=1}^{n} X_i - n\mu}{\sigma\sqrt{n}}
+	\end{equation}
+	converges in distribution to the standard normal distribution:
+	\begin{equation}
+		Z_n \sim \mathcal{N}(0,1).
+	\end{equation}
+\end{theorem}
+
+If you want more such environments to be numbered and formatted consistently, add the following code in the preamble of your document and replace the commands, what you need and use it as environments.
+
+\begin{verbatim}
+\newtheorem{corollary}[theorem]{Corollary}
+\end{verbatim}
+Note that, this follows the numbering of theorem environment. 
+
+\begin{remark}
+This remark is typed using the similar theorem environment but without numbering. Note that, we have added the following in the preamble to achieve this:
+\begin{verbatim}
+\newtheorem{remark}{Remark}
+\end{verbatim}
+\end{remark}
+

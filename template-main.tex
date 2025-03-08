@@ -1,7 +1,14 @@
 \documentclass[12pt, a4paper, oneside]{vitmscthesis}
 
+%% theorem environments...
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
 
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}{Remark} %% without numbering...
 
+%% -- end theorem environments...
 
 \renewcommand{\baselinestretch}{1.5} % for line spacing
 

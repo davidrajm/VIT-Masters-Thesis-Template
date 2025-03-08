@@ -6,7 +6,9 @@
 \LoadClass{book}
 
 %%
-\RequirePackage{graphicx, amsmath, times, enumitem, booktabs, amssymb}
+\RequirePackage{graphicx, amsmath, times, enumitem, booktabs, amssymb,amsthm,longtable}
+\RequirePackage{tikz}
+\RequirePackage[table,dvipsnames]{xcolor}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 %%
@@ -14,6 +16,10 @@
 \makeindex
 
 \RequirePackage{natbib}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 
 %%%--- Custom commands for use case
 \newcommand{\thesistitle}[1]%
